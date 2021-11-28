@@ -2,6 +2,6 @@
 
 > ## [Semester 3](S3)
 >
-> [Program Design](S3/Program Design)
+> [Program Design](S3/Program_Design)
 >
-> [Discrete Structures](S3/Discrete Structures)
+> [Discrete Structures](S3/Discrete_Structures)
