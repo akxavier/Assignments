@@ -5,3 +5,5 @@
 > [Program Design](S3/Program_Design)
 >
 > [Discrete Structures](S3/Discrete_Structures)
+>
+> [Logic Design](S3/Logic_Design)
