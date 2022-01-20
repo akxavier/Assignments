@@ -1,0 +1,74 @@
+# Reading pref.tcl
+# do assg4redo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/assg4redo {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/fa_dataflow.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:21:51 on Nov 15,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/fa_dataflow.v 
+# -- Compiling module fa_dataflow
+# 
+# Top level modules:
+# 	fa_dataflow
+# End time: 13:21:51 on Nov 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/assg4redo {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/ha_dataflow.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:21:51 on Nov 15,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/ha_dataflow.v 
+# -- Compiling module ha_dataflow
+# 
+# Top level modules:
+# 	ha_dataflow
+# End time: 13:21:51 on Nov 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/assg4redo {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/mult_unsign.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:21:51 on Nov 15,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/mult_unsign.v 
+# -- Compiling module mult_unsign
+# 
+# Top level modules:
+# 	mult_unsign
+# End time: 13:21:52 on Nov 15,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/assg4redo {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/mult_unsign_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:21:52 on Nov 15,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/mult_unsign_tb.v 
+# -- Compiling module mult_unsign_tb
+# 
+# Top level modules:
+# 	mult_unsign_tb
+# End time: 13:21:52 on Nov 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  mult_unsign_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" mult_unsign_tb 
+# Start time: 13:21:52 on Nov 15,2021
+# Loading work.mult_unsign_tb
+# Loading work.mult_unsign
+# Loading work.ha_dataflow
+# Loading work.fa_dataflow
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0x = 1001, y = 0111, out = 00111111
+# ** Note: $stop    : C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/mult_unsign_tb.v(15)
+#    Time: 20 ps  Iteration: 0  Instance: /mult_unsign_tb
+# Break in Module mult_unsign_tb at C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/mult_unsign_tb.v line 15
+# End time: 13:22:17 on Nov 15,2021, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 0

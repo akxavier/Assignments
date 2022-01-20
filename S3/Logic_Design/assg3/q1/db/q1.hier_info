@@ -1,0 +1,9 @@
+|clk_sr_behavioral
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_bar.DB_MAX_OUTPUT_PORT_TYPE
+clk => a.IN0
+clk => b.IN0
+r => b.IN1
+s => a.IN1
+
+

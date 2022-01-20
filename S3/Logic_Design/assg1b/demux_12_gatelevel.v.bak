@@ -1,0 +1,14 @@
+module demux_12_gatelevel (a, b, s, din);
+
+output a, b;
+input s, din;
+
+wire s_bar, din_bar;
+
+nand g1 (s_bar, s, s);
+nand g2 (din_bar, din, din);
+
+nand (a, s, din_bar);
+nand (b, s_bar, din_bar);
+
+endmodule

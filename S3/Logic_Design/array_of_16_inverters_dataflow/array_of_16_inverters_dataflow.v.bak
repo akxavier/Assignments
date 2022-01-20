@@ -1,0 +1,8 @@
+module array_of_16_inverters_dataflow (out, in);
+
+output [15:0] out;
+input [15:0] in;
+
+assign [15:0] out = ~in;
+
+endmodule

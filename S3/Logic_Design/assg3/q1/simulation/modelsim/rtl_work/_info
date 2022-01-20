@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1/simulation/modelsim
+vclk_sr_behavioral
+!s110 1635491347
+!i10b 1
+!s100 Xf8H_=V[i=U0z0;=JI9Vb2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<=7:nDMf]`CXE21]YM3;U2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1635491215
+8C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1/clk_sr_behavioral.v
+FC:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1/clk_sr_behavioral.v
+!i122 0
+L0 1 15
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1635491347.000000
+!s107 C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1/clk_sr_behavioral.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1|C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1/clk_sr_behavioral.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1}
+Z6 tCvgOpt 0
+vclk_sr_behavioral_tb
+!s110 1635491348
+!i10b 1
+!s100 XT0S]LbggZjhZ7FYYR<bi3
+R1
+IoMFcf8?@E6Q;R^Q5XIE^30
+R2
+R0
+w1635491276
+8C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1/clk_sr_behavioral_tb.v
+FC:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1/clk_sr_behavioral_tb.v
+!i122 1
+L0 1 29
+R3
+r1
+!s85 0
+31
+!s108 1635491348.000000
+!s107 C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1/clk_sr_behavioral_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1|C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1/clk_sr_behavioral_tb.v|
+!i113 1
+R4
+R5
+R6

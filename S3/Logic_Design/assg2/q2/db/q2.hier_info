@@ -1,0 +1,21 @@
+|ALU_1bit
+cout << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+dout << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Mux0.IN10
+sel[0] => Mux1.IN10
+sel[1] => Mux0.IN9
+sel[1] => Mux1.IN9
+sel[2] => Mux0.IN8
+sel[2] => Mux1.IN8
+a => dout.IN0
+a => dout.IN0
+a => Add0.IN2
+a => LessThan0.IN1
+a => Add1.IN1
+b => dout.IN1
+b => dout.IN1
+b => LessThan0.IN2
+b => Add1.IN2
+b => Add0.IN1
+
+

@@ -1,0 +1,98 @@
+|demux_18_behavioral
+a <= demux_14_behavioral:demux2.a
+b <= demux_14_behavioral:demux2.b
+c <= demux_14_behavioral:demux2.c
+d <= demux_14_behavioral:demux2.d
+e <= demux_14_behavioral:demux3.a
+f <= demux_14_behavioral:demux3.b
+g <= demux_14_behavioral:demux3.c
+h <= demux_14_behavioral:demux3.d
+s[0] => s[0].IN2
+s[1] => s[1].IN2
+s[2] => s[2].IN1
+din => din.IN1
+
+
+|demux_18_behavioral|demux_12_behavioral:demux1
+a <= out1.DB_MAX_OUTPUT_PORT_TYPE
+b <= out2.DB_MAX_OUTPUT_PORT_TYPE
+s => out2.IN0
+s => out1.IN0
+din => out1.IN1
+din => out2.IN1
+
+
+|demux_18_behavioral|demux_14_behavioral:demux2
+a <= demux_12_behavioral:demux2.a
+b <= demux_12_behavioral:demux2.b
+c <= demux_12_behavioral:demux3.a
+d <= demux_12_behavioral:demux3.b
+s[0] => s[0].IN2
+s[1] => s[1].IN1
+din => din.IN1
+
+
+|demux_18_behavioral|demux_14_behavioral:demux2|demux_12_behavioral:demux1
+a <= out1.DB_MAX_OUTPUT_PORT_TYPE
+b <= out2.DB_MAX_OUTPUT_PORT_TYPE
+s => out2.IN0
+s => out1.IN0
+din => out1.IN1
+din => out2.IN1
+
+
+|demux_18_behavioral|demux_14_behavioral:demux2|demux_12_behavioral:demux2
+a <= out1.DB_MAX_OUTPUT_PORT_TYPE
+b <= out2.DB_MAX_OUTPUT_PORT_TYPE
+s => out2.IN0
+s => out1.IN0
+din => out1.IN1
+din => out2.IN1
+
+
+|demux_18_behavioral|demux_14_behavioral:demux2|demux_12_behavioral:demux3
+a <= out1.DB_MAX_OUTPUT_PORT_TYPE
+b <= out2.DB_MAX_OUTPUT_PORT_TYPE
+s => out2.IN0
+s => out1.IN0
+din => out1.IN1
+din => out2.IN1
+
+
+|demux_18_behavioral|demux_14_behavioral:demux3
+a <= demux_12_behavioral:demux2.a
+b <= demux_12_behavioral:demux2.b
+c <= demux_12_behavioral:demux3.a
+d <= demux_12_behavioral:demux3.b
+s[0] => s[0].IN2
+s[1] => s[1].IN1
+din => din.IN1
+
+
+|demux_18_behavioral|demux_14_behavioral:demux3|demux_12_behavioral:demux1
+a <= out1.DB_MAX_OUTPUT_PORT_TYPE
+b <= out2.DB_MAX_OUTPUT_PORT_TYPE
+s => out2.IN0
+s => out1.IN0
+din => out1.IN1
+din => out2.IN1
+
+
+|demux_18_behavioral|demux_14_behavioral:demux3|demux_12_behavioral:demux2
+a <= out1.DB_MAX_OUTPUT_PORT_TYPE
+b <= out2.DB_MAX_OUTPUT_PORT_TYPE
+s => out2.IN0
+s => out1.IN0
+din => out1.IN1
+din => out2.IN1
+
+
+|demux_18_behavioral|demux_14_behavioral:demux3|demux_12_behavioral:demux3
+a <= out1.DB_MAX_OUTPUT_PORT_TYPE
+b <= out2.DB_MAX_OUTPUT_PORT_TYPE
+s => out2.IN0
+s => out1.IN0
+din => out1.IN1
+din => out2.IN1
+
+

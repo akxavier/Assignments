@@ -1,0 +1,16 @@
+module mux_21_16bit_dataflow (y, s, a, b);
+
+output [15:0] y;
+input [15:0] a, b;
+input s;
+
+wire s_bar, m, n;
+
+assign s_bar = ~(s & s);
+
+assign m = ~(s_bar & m);
+assign n = ~(s & n);
+
+assign y = ~(m & n);
+
+endmodule

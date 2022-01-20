@@ -1,0 +1,65 @@
+# Reading pref.tcl
+# do q3_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/assg3/q3 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q3/d_latch.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:47:07 on Oct 31,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q3" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q3/d_latch.v 
+# -- Compiling module d_latch
+# 
+# Top level modules:
+# 	d_latch
+# End time: 22:47:07 on Oct 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/assg3/q3 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q3/buffer3.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:47:08 on Oct 31,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q3" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q3/buffer3.v 
+# -- Compiling module buffer3
+# 
+# Top level modules:
+# 	buffer3
+# End time: 22:47:08 on Oct 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/assg3/q3 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q3/buffer3_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:47:08 on Oct 31,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q3" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q3/buffer3_tb.v 
+# -- Compiling module buffer3_tb
+# 
+# Top level modules:
+# 	buffer3_tb
+# End time: 22:47:08 on Oct 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  buffer3_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" buffer3_tb 
+# Start time: 22:47:08 on Oct 31,2021
+# Loading work.buffer3_tb
+# Loading work.buffer3
+# Loading work.d_latch
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'l1'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /buffer3_tb/b1/l1 File: C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q3/buffer3.v Line: 8
+# ** Warning: (vsim-3722) C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q3/buffer3.v(8): [TFMPC] - Missing connection for port 'q_bar'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q3/buffer3_tb.v(32)
+#    Time: 70 ps  Iteration: 0  Instance: /buffer3_tb
+# Break in Module buffer3_tb at C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q3/buffer3_tb.v line 32
+# End time: 22:48:27 on Oct 31,2021, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 2

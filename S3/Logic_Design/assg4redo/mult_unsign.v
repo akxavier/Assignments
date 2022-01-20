@@ -1,0 +1,24 @@
+module mult_unsign (out, x, y);
+
+output [7:0] out;
+input [3:0] x, y;
+
+wire [10:0] c;
+wire [5:0] s;
+
+assign out[0] = x[0] & y[0];
+
+ha_dataflow ha1 (.s(out[1]), .c(c[0]), .a(x[0] & y[1]), .b(x[1] & y[0]));
+fa_dataflow fa1 (.s(s[0]), .c(c[1]), .a(x[2] & y[0]), .b(x[1] & y[1]), .cin(c[0]));
+fa_dataflow fa2 (.s(s[1]), .c(c[2]), .a(x[2] & y[1]), .b(x[3] & y[0]), .cin(c[1]));
+ha_dataflow ha2 (.s(s[2]), .c(c[3]), .a(x[3] & y[1]), .b(c[2]));
+ha_dataflow ha3 (.s(out[2]), .c(c[4]), .a(s[0]), .b(x[0] & y[2]));
+fa_dataflow fa3 (.s(s[3]), .c(c[5]), .a(s[1]), .b(x[1] & y[2]), .cin(c[4]));
+fa_dataflow fa4 (.s(s[4]), .c(c[6]), .a(s[2]), .b(x[2] & y[2]), .cin(c[5]));
+fa_dataflow fa5 (.s(s[5]), .c(c[7]), .a(c[3]), .b(x[3] & y[2]), .cin(c[6]));
+ha_dataflow ha4 (.s(out[3]), .c(c[8]), .a(s[3]), .b(x[0] & y[3]));
+fa_dataflow fa6 (.s(out[4]), .c(c[9]), .a(s[4]), .b(x[1] & y[3]), .cin(c[8]));
+fa_dataflow fa7 (.s(out[5]), .c(c[10]), .a(s[5]), .b(x[2] & y[3]), .cin(c[9]));
+fa_dataflow fa8 (.s(out[6]), .c(out[7]), .a(c[7]), .b(x[3] & y[3]), .cin(c[10]));
+
+endmodule

@@ -1,0 +1,6 @@
+|nor_gate
+out <= g1.DB_MAX_OUTPUT_PORT_TYPE
+a => g1.IN0
+b => g1.IN1
+
+

@@ -1,0 +1,17 @@
+module syn_dl (q, q_bar, clk, pre, clr, d);
+
+output q, q_bar;
+input clk, pre, clr, d;
+reg a;
+
+d_gl d1 (.q(q), .q_bar(q_bar), .clk(clk), .d(a));
+
+always @ (clk, pre, clr, d)
+begin
+	case ({pre, clr})
+		2'b01: a = 1'b1;
+		2'b10: a = 1'b0;
+		2'b11: a = d;
+	endcase
+end
+

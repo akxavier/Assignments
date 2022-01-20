@@ -1,0 +1,93 @@
+# Reading pref.tcl
+# do lab3_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/lab3 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/lab3/dff1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:53:20 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/lab3" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/lab3/dff1.v 
+# -- Compiling module dff1
+# 
+# Top level modules:
+# 	dff1
+# End time: 16:53:20 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/lab3 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/lab3/decoder3to8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:53:21 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/lab3" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/lab3/decoder3to8.v 
+# -- Compiling module decoder3to8
+# 
+# Top level modules:
+# 	decoder3to8
+# End time: 16:53:21 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/lab3 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/lab3/reg8bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:53:21 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/lab3" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/lab3/reg8bit.v 
+# -- Compiling module reg8bit
+# 
+# Top level modules:
+# 	reg8bit
+# End time: 16:53:21 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/lab3 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/lab3/reg8bit_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:53:22 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/lab3" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/lab3/reg8bit_tb.v 
+# -- Compiling module reg8bit_tb
+# 
+# Top level modules:
+# 	reg8bit_tb
+# End time: 16:53:22 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  reg8bit_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" reg8bit_tb 
+# Start time: 16:53:22 on Nov 01,2021
+# Loading work.reg8bit_tb
+# Loading work.reg8bit
+# Loading work.decoder3to8
+# Loading work.dff1
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0clk = 0, addr = 001, din = 00001100, dout = xxxxxxxx
+#                    5clk = 1, addr = 001, din = 00001100, dout = xxxxxxxx
+#                   10clk = 0, addr = 101, din = 00001100, dout = xxxxxx0x
+#                   15clk = 1, addr = 101, din = 00001100, dout = xxxxxx0x
+#                   20clk = 0, addr = 111, din = 00001100, dout = xx0xxx0x
+#                   25clk = 1, addr = 111, din = 00001100, dout = xx0xxx0x
+#                   30clk = 0, addr = 000, din = 00001100, dout = 0x0xxx0x
+#                   35clk = 1, addr = 000, din = 00001100, dout = 0x0xxx0x
+#                   40clk = 0, addr = 010, din = 00001100, dout = 0x0xxx00
+#                   45clk = 1, addr = 010, din = 00001100, dout = 0x0xxx00
+#                   50clk = 0, addr = 011, din = 00001100, dout = 0x0xx100
+#                   55clk = 1, addr = 011, din = 00001100, dout = 0x0xx100
+#                   60clk = 0, addr = 100, din = 00001100, dout = 0x0x1100
+#                   65clk = 1, addr = 100, din = 00001100, dout = 0x0x1100
+#                   70clk = 0, addr = 110, din = 00001100, dout = 0x001100
+#                   75clk = 1, addr = 110, din = 00001100, dout = 0x001100
+#                   80clk = 0, addr = 110, din = 00000010, dout = 00001100
+#                   85clk = 1, addr = 110, din = 00000010, dout = 00001100
+#                   90clk = 0, addr = 110, din = 00000010, dout = 00001100
+#                   95clk = 1, addr = 110, din = 00000010, dout = 00001100
+# ** Note: $stop    : C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/lab3/reg8bit_tb.v(18)
+#    Time: 100 ps  Iteration: 0  Instance: /reg8bit_tb
+# Break in Module reg8bit_tb at C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/lab3/reg8bit_tb.v line 18
+# End time: 16:56:18 on Nov 01,2021, Elapsed time: 0:02:56
+# Errors: 0, Warnings: 0

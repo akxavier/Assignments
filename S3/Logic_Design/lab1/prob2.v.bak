@@ -1,0 +1,5 @@
+module prob1 (out, x, y, z);
+
+output out;
+input x, y, z;
+

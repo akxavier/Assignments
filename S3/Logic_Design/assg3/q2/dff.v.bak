@@ -1,0 +1,16 @@
+module dff (q, q_bar, clk, d);
+
+output q, q_bar;
+input clk, d;
+wire a, b;
+
+always @ (posedge clk)
+begin
+	a = ~(d & clk);
+	b = ~(a & clk);
+	
+	q = ~(a & q_bar);
+	q_bar = ~(b & q);
+end
+
+endmodule

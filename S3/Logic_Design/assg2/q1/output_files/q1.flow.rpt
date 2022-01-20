@@ -1,0 +1,152 @@
+Flow report for q1
+Fri Oct 08 22:56:02 2021
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Flow Failed - Fri Oct 08 22:56:02 2021      ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; q1                                          ;
+; Top-level Entity Name              ; lookahead_behavioral                        ;
+; Family                             ; MAX 10                                      ;
+; Device                             ; 10M50DAF484C7G                              ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
+; UFM blocks                         ; N/A until Partition Merge                   ;
+; ADC blocks                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 10/08/2021 22:55:55 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; q1                  ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                   ;
++--------------------------------------+----------------------------------------+---------------+----------------------+-----------------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name          ; Section Id                  ;
++--------------------------------------+----------------------------------------+---------------+----------------------+-----------------------------+
+; COMPILER_SIGNATURE_ID                ; 251053323026694.163371395507600        ; --            ; --                   ; --                          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                   ; fa_gatelevel_tb             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                   ; ha_gatelevel_tb             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                   ; fa_dataflow_tb              ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                   ; fa_behavioral_tb            ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                   ; ripple_carry_gatelevel32_tb ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                   ; ha_behavioral_tb            ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                   ; ha_dataflow_tb              ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; ripple_carry_gatelevel32_tb            ; --            ; --                   ; eda_simulation              ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --                   ; eda_simulation              ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --                   ; --                          ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --                   ; eda_simulation              ;
+; EDA_TEST_BENCH_FILE                  ; fa_gatelevel_tb.v                      ; --            ; --                   ; fa_gatelevel_tb             ;
+; EDA_TEST_BENCH_FILE                  ; ha_gatelevel_tb.v                      ; --            ; --                   ; ha_gatelevel_tb             ;
+; EDA_TEST_BENCH_FILE                  ; fa_dataflow_tb.v                       ; --            ; --                   ; fa_dataflow_tb              ;
+; EDA_TEST_BENCH_FILE                  ; fa_behavioral_tb.v                     ; --            ; --                   ; fa_behavioral_tb            ;
+; EDA_TEST_BENCH_FILE                  ; ripple_carry_gatelevel32_tb.v          ; --            ; --                   ; ripple_carry_gatelevel32_tb ;
+; EDA_TEST_BENCH_FILE                  ; ha_behavioral_tb.v                     ; --            ; --                   ; ha_behavioral_tb            ;
+; EDA_TEST_BENCH_FILE                  ; ha_dataflow_tb.v                       ; --            ; --                   ; ha_dataflow_tb              ;
+; EDA_TEST_BENCH_MODULE_NAME           ; fa_gatelevel_tb                        ; --            ; --                   ; fa_gatelevel_tb             ;
+; EDA_TEST_BENCH_MODULE_NAME           ; ha_gatelevel_tb                        ; --            ; --                   ; ha_gatelevel_tb             ;
+; EDA_TEST_BENCH_MODULE_NAME           ; fa_dataflow_tb                         ; --            ; --                   ; fa_dataflow_tb              ;
+; EDA_TEST_BENCH_MODULE_NAME           ; fa_behavioral_tb                       ; --            ; --                   ; fa_behavioral_tb            ;
+; EDA_TEST_BENCH_MODULE_NAME           ; ripple_carry_gatelevel32_tb            ; --            ; --                   ; ripple_carry_gatelevel32_tb ;
+; EDA_TEST_BENCH_MODULE_NAME           ; ha_behavioral_tb                       ; --            ; --                   ; ha_behavioral_tb            ;
+; EDA_TEST_BENCH_MODULE_NAME           ; ha_dataflow_tb                         ; --            ; --                   ; ha_dataflow_tb              ;
+; EDA_TEST_BENCH_NAME                  ; ha_gatelevel_tb                        ; --            ; --                   ; eda_simulation              ;
+; EDA_TEST_BENCH_NAME                  ; ha_dataflow_tb                         ; --            ; --                   ; eda_simulation              ;
+; EDA_TEST_BENCH_NAME                  ; ha_behavioral_tb                       ; --            ; --                   ; eda_simulation              ;
+; EDA_TEST_BENCH_NAME                  ; fa_gatelevel_tb                        ; --            ; --                   ; eda_simulation              ;
+; EDA_TEST_BENCH_NAME                  ; fa_dataflow_tb                         ; --            ; --                   ; eda_simulation              ;
+; EDA_TEST_BENCH_NAME                  ; fa_behavioral_tb                       ; --            ; --                   ; eda_simulation              ;
+; EDA_TEST_BENCH_NAME                  ; ripple_carry_gatelevel32_tb            ; --            ; --                   ; eda_simulation              ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --                   ; eda_simulation              ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --                   ; --                          ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --                   ; --                          ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; lookahead_behavioral ; Top                         ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; lookahead_behavioral ; Top                         ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; lookahead_behavioral ; Top                         ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --                   ; --                          ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                   ; --                          ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --                   ; --                          ;
+; TOP_LEVEL_ENTITY                     ; lookahead_behavioral                   ; q1            ; --                   ; --                          ;
++--------------------------------------+----------------------------------------+---------------+----------------------+-----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4702 MB             ; 00:00:18                           ;
+; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:18                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++------------------------+------------------+------------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++------------------------+------------------+------------+------------+----------------+
+; Analysis & Elaboration ; DESKTOP-GCQ1QAP  ; Windows 10 ; 10.0       ; x86_64         ;
++------------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off q1 -c q1 --analysis_and_elaboration
+
+
+

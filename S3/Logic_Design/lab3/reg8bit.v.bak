@@ -1,0 +1,14 @@
+module reg8bit (dout, clk, addr, din);
+
+output [7:0] dout;
+input clk;
+input [2:0] addr;
+input [7:0] din;
+
+wire [7:0] sel;
+
+decoder d1 (.out(sel), .in(addr));
+
+dff1 ff[7:0] (.out(dout), .clk(sel & clk), .d(din));
+
+endmodule

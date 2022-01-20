@@ -1,0 +1,64 @@
+# Reading pref.tcl
+# do q2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/assg2/q2 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q2/ALU_1bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:19 on Oct 08,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q2" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q2/ALU_1bit.v 
+# -- Compiling module ALU_1bit
+# 
+# Top level modules:
+# 	ALU_1bit
+# End time: 18:49:19 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/assg2/q2 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q2/ALU_1bit_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:49:20 on Oct 08,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q2" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q2/ALU_1bit_tb.v 
+# -- Compiling module ALU_1bit_tb
+# 
+# Top level modules:
+# 	ALU_1bit_tb
+# End time: 18:49:20 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  ALU_1bit_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" ALU_1bit_tb 
+# Start time: 18:49:20 on Oct 08,2021
+# Loading work.ALU_1bit_tb
+# Loading work.ALU_1bit
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0a = 0, b = 0, sel = 000, cout = 0, dout = 0
+#                    5a = 0, b = 0, sel = 001, cout = 0, dout = 0
+#                   10a = 0, b = 0, sel = 010, cout = 0, dout = 0
+#                   15a = 0, b = 0, sel = 011, cout = 0, dout = 0
+#                   20a = 0, b = 0, sel = 100, cout = 0, dout = 0
+#                   25a = 0, b = 1, sel = 000, cout = 0, dout = 0
+#                   30a = 0, b = 1, sel = 001, cout = 0, dout = 1
+#                   35a = 0, b = 1, sel = 010, cout = 0, dout = 1
+#                   40a = 0, b = 1, sel = 011, cout = 1, dout = 1
+#                   45a = 0, b = 1, sel = 100, cout = 0, dout = 1
+#                   50a = 1, b = 0, sel = 000, cout = 0, dout = 0
+#                   55a = 1, b = 0, sel = 001, cout = 0, dout = 1
+#                   60a = 1, b = 0, sel = 010, cout = 0, dout = 1
+#                   65a = 1, b = 0, sel = 011, cout = 0, dout = 1
+#                   70a = 1, b = 0, sel = 100, cout = 0, dout = 0
+#                   75a = 1, b = 1, sel = 100, cout = 0, dout = 0
+# End time: 18:49:37 on Oct 08,2021, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 0

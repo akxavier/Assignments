@@ -1,0 +1,17 @@
+module mux_21_gatelevel (y, s, a, b);
+
+output reg y;
+input s, a, b;
+
+wire m, n, a_bar, b_bar, s_bar;
+
+not (a_bar, a);
+not (b_bar, b);
+not (s_bar, s);
+
+nand (m, s, a_bar);
+nand (n, s_bar, b_bar);
+
+nand (y, m,  n);
+
+endmodule

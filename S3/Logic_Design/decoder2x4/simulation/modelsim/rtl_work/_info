@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4/simulation/modelsim
+vdecoder2x4
+!s110 1635674400
+!i10b 1
+!s100 Q]BJi?J6DRC]<afeRDaQ<0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IkD[A^gSFEoi`dhgR2kdCN3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1635674128
+8C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4/decoder2x4.v
+FC:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4/decoder2x4.v
+!i122 0
+L0 1 17
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1635674400.000000
+!s107 C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4/decoder2x4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4|C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4/decoder2x4.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4}
+Z6 tCvgOpt 0
+vdecoder2x4_tb
+!s110 1635674401
+!i10b 1
+!s100 zmU=>T9;8`2YB4@5e@3l00
+R1
+IQ8hN[ad96^4Fl4jgOS;i73
+R2
+R0
+w1635674346
+8C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4/decoder2x4_tb.v
+FC:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4/decoder2x4_tb.v
+!i122 1
+L0 1 23
+R3
+r1
+!s85 0
+31
+!s108 1635674401.000000
+!s107 C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4/decoder2x4_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4|C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4/decoder2x4_tb.v|
+!i113 1
+R4
+R5
+R6

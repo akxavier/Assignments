@@ -1,0 +1,8 @@
+module xor_dataflow (out, a, b);
+
+output out;
+input a, b;
+
+assign out = (x & ~y) | (~x & y);
+
+endmodule

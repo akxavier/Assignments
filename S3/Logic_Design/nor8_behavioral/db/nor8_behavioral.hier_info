@@ -1,0 +1,12 @@
+|nor8_behavioral
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+a => out.IN0
+b => out.IN1
+c => out.IN1
+d => out.IN1
+e => out.IN1
+f => out.IN1
+g => out.IN1
+h => out.IN1
+
+

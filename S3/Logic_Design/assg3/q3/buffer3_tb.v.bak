@@ -1,0 +1,29 @@
+module buffer3_tb;
+
+wire out;
+reg clk, en, d;
+
+buffer3 b1 (.out(out), .clk(clk), .en(en), .d(d));
+
+always 
+begin
+	clk = 0;
+	#5 clk = 1;
+	#5;
+end
+
+initial
+begin
+	en = 0; d = 1;
+	#10 en = 1;
+	#8 en = 0;
+	#12 d = 0;
+	#10 en = 1;
+	#10 d = 1;
+	#10;
+end
+
+initial
+#70 $stop;
+
+endmodule

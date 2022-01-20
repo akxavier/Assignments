@@ -1,0 +1,6 @@
+|xnor_dataflow
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+x => out.IN0
+y => out.IN1
+
+

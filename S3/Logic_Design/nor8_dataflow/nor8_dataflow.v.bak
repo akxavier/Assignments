@@ -1,0 +1,8 @@
+module nor8_dataflow (out, a, b);
+
+output out;
+input [7:0] a, b;
+
+assign out = ~ (a | b);
+
+endmodule

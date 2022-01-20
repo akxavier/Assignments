@@ -1,0 +1,100 @@
+|reg8bit
+dout[0] << dff1:ff[0].out
+dout[1] << dff1:ff[1].out
+dout[2] << dff1:ff[2].out
+dout[3] << dff1:ff[3].out
+dout[4] << dff1:ff[4].out
+dout[5] << dff1:ff[5].out
+dout[6] << dff1:ff[6].out
+dout[7] << dff1:ff[7].out
+clk => g1[0].IN1
+clk => g1[1].IN1
+clk => g1[2].IN1
+clk => g1[3].IN1
+clk => g1[4].IN1
+clk => g1[5].IN1
+clk => g1[6].IN1
+clk => g1[7].IN1
+addr[0] => addr[0].IN1
+addr[1] => addr[1].IN1
+addr[2] => addr[2].IN1
+din[0] => dff1:ff[0].d
+din[1] => dff1:ff[1].d
+din[2] => dff1:ff[2].d
+din[3] => dff1:ff[3].d
+din[4] => dff1:ff[4].d
+din[5] => dff1:ff[5].d
+din[6] => dff1:ff[6].d
+din[7] => dff1:ff[7].d
+
+
+|reg8bit|decoder3to8:d1
+out[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => Decoder0.IN2
+in[1] => Decoder0.IN1
+in[2] => Decoder0.IN0
+
+
+|reg8bit|dff1:ff[0]
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q.CLK
+clk => out~reg0.CLK
+d => q.DATAIN
+
+
+|reg8bit|dff1:ff[1]
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q.CLK
+clk => out~reg0.CLK
+d => q.DATAIN
+
+
+|reg8bit|dff1:ff[2]
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q.CLK
+clk => out~reg0.CLK
+d => q.DATAIN
+
+
+|reg8bit|dff1:ff[3]
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q.CLK
+clk => out~reg0.CLK
+d => q.DATAIN
+
+
+|reg8bit|dff1:ff[4]
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q.CLK
+clk => out~reg0.CLK
+d => q.DATAIN
+
+
+|reg8bit|dff1:ff[5]
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q.CLK
+clk => out~reg0.CLK
+d => q.DATAIN
+
+
+|reg8bit|dff1:ff[6]
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q.CLK
+clk => out~reg0.CLK
+d => q.DATAIN
+
+
+|reg8bit|dff1:ff[7]
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q.CLK
+clk => out~reg0.CLK
+d => q.DATAIN
+
+

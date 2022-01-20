@@ -1,0 +1,55 @@
+# Reading pref.tcl
+# do decoder2x4_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/decoder2x4 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4/decoder2x4.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:30:00 on Oct 31,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4/decoder2x4.v 
+# -- Compiling module decoder2x4
+# 
+# Top level modules:
+# 	decoder2x4
+# End time: 15:30:00 on Oct 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/decoder2x4 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4/decoder2x4_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:30:01 on Oct 31,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/decoder2x4/decoder2x4_tb.v 
+# -- Compiling module decoder2x4_tb
+# 
+# Top level modules:
+# 	decoder2x4_tb
+# End time: 15:30:01 on Oct 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  decoder2x4_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" decoder2x4_tb 
+# Start time: 15:30:01 on Oct 31,2021
+# Loading work.decoder2x4_tb
+# Loading work.decoder2x4
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0in = 00, out = 0001
+#                   10in = 01, out = 0010
+#                   20in = 10, out = 0100
+#                   30in = 11, out = 1000
+#                   40in = 01, out = 0010
+#                   50in = 11, out = 1000
+#                   60in = 00, out = 0001
+# End time: 15:30:51 on Oct 31,2021, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 0

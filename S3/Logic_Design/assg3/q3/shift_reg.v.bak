@@ -1,0 +1,12 @@
+module shift_reg (dout, clk, din);
+
+output reg [7:0] dout;
+input clk;
+input [7:0] ;
+
+always @ (posedge clk)
+begin
+	dout = di;
+end
+
+endmodule 

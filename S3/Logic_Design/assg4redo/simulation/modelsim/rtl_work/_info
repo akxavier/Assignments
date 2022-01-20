@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/simulation/modelsim
+vfa_dataflow
+Z1 !s110 1636962711
+!i10b 1
+!s100 bIZeMJUk<0`0FXPLzC=<21
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ilc3^G1eS[HKaFO1^K5fhT2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1636956961
+8C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/fa_dataflow.v
+FC:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/fa_dataflow.v
+!i122 0
+Z4 L0 1 9
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1636962711.000000
+!s107 C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/fa_dataflow.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo|C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/fa_dataflow.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work {+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo}
+Z9 tCvgOpt 0
+vha_dataflow
+R1
+!i10b 1
+!s100 0B?b2gHS[8l`<D@g;@W_Y0
+R2
+IJm92JkVQUgj5V8TCc=_9U2
+R3
+R0
+w1636957154
+8C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/ha_dataflow.v
+FC:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/ha_dataflow.v
+!i122 1
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/ha_dataflow.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo|C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/ha_dataflow.v|
+!i113 1
+R7
+R8
+R9
+vmult_unsign
+R1
+!i10b 1
+!s100 eo<[0LIY^e[]=^l0IR1hl2
+R2
+IUU4^0BkhEmZN<D=:6Gzg13
+R3
+R0
+w1636960878
+8C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/mult_unsign.v
+FC:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/mult_unsign.v
+!i122 2
+L0 1 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/mult_unsign.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo|C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/mult_unsign.v|
+!i113 1
+R7
+R8
+R9
+vmult_unsign_tb
+!s110 1636962712
+!i10b 1
+!s100 CEaG87[:8_NEcRCFHOO[H2
+R2
+I4>W58f5TZf<=J8HiSK9Q`2
+R3
+R0
+w1636962632
+8C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/mult_unsign_tb.v
+FC:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/mult_unsign_tb.v
+!i122 3
+L0 1 20
+R5
+r1
+!s85 0
+31
+!s108 1636962712.000000
+!s107 C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/mult_unsign_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo|C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg4redo/mult_unsign_tb.v|
+!i113 1
+R7
+R8
+R9

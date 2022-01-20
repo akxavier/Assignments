@@ -1,0 +1,30 @@
+module ALU_1bit (cout, dout, sel, a, b);
+
+output reg dout, cout;
+input a, b;
+input [1:0] sel;
+
+parameter AND = 3'b000, OR = 3'b001, ADD = 3'b010, SUB = 3'b011, LESS = 3'b100;
+
+always @ * 
+
+begin
+	case (sel)
+		AND: begin 
+				dout = a & b;
+				cout = 1'b0;
+			  end
+		OR: begin
+				dout = a | b;
+				cout = 1'b0;
+			 end
+		ADD: {cout, dout} = a + b;
+		SUB: {cout, dout} = a - b;
+		LESS: begin
+				dout = (a < b)? 1'b1 : 1'b0;
+				cout = 1'b0;
+				end
+	endcase
+end 
+
+endmodule

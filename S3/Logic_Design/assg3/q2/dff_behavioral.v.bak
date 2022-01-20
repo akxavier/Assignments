@@ -1,0 +1,16 @@
+odule dff_behavioral (q, q_bar, clk, d);
+
+output reg q, q_bar;
+input clk, d;
+reg a, b;
+
+always @ (posedge clk)
+begin
+	a = ~(d & clk);
+	b = ~(a & clk);
+	
+	q = ~(a & q_bar);
+	q_bar = ~(b & q);
+end
+
+endmodule

@@ -1,0 +1,7 @@
+module nand8_gate
+(output out,
+input [0:7] a);
+
+nand (out, a[0:7]);
+
+endmodule

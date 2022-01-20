@@ -1,0 +1,27 @@
+module asyn_d_gl_tb;
+
+wire q, q_bar;
+reg clk, pre, clr, d;
+
+always 
+begin
+clk = 0;
+#30 clk = 1;
+end
+
+initial
+begin
+	pre = 0; clr = 1; d = 0;
+	#5 pre = 0; clr = 1; d = 1;
+	#5 pre = 1; clr = 0; d = 0;
+	#5 pre = 1; clr = 0; d = 1;
+	#5 pre = 1; clr = 1; d = 0;
+	#5 pre = 1; clr = 1; d = 1;
+	#5 pre = 0; clr = 1; d = 0;
+	#5 pre = 0; clr = 1; d = 1;
+	#5 pre = 1; clr = 0; d = 0;
+	#5 pre = 1; clr = 0; d = 1;
+	#5 pre = 1; clr = 1; d = 0;
+	#5 pre = 1; clr = 1; d = 1;
+	#5;
+end

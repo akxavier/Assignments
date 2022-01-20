@@ -1,0 +1,61 @@
+# Reading pref.tcl
+# do q1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/assg3/q1 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1/clk_sr_behavioral.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:39:07 on Oct 29,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1/clk_sr_behavioral.v 
+# -- Compiling module clk_sr_behavioral
+# 
+# Top level modules:
+# 	clk_sr_behavioral
+# End time: 12:39:07 on Oct 29,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/assg3/q1 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1/clk_sr_behavioral_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:39:08 on Oct 29,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1/clk_sr_behavioral_tb.v 
+# -- Compiling module clk_sr_behavioral_tb
+# 
+# Top level modules:
+# 	clk_sr_behavioral_tb
+# End time: 12:39:08 on Oct 29,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  clk_sr_behavioral_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" clk_sr_behavioral_tb 
+# Start time: 12:39:08 on Oct 29,2021
+# Loading work.clk_sr_behavioral_tb
+# Loading work.clk_sr_behavioral
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0clk = 1, s = 0, r = 0, q = x, q_bar = x
+#                   10clk = 1, s = 0, r = 1, q = x, q_bar = 1
+#                   20clk = 1, s = 1, r = 0, q = 1, q_bar = 0
+#                   30clk = 0, s = 0, r = 0, q = 1, q_bar = 0
+#                   40clk = 0, s = 0, r = 1, q = 1, q_bar = 0
+#                   50clk = 0, s = 1, r = 0, q = 1, q_bar = 0
+#                   60clk = 1, s = 0, r = 0, q = 1, q_bar = 0
+#                   70clk = 1, s = 0, r = 1, q = 1, q_bar = 1
+#                   80clk = 1, s = 1, r = 0, q = 1, q_bar = 0
+#                   90clk = 0, s = 0, r = 0, q = 1, q_bar = 0
+# ** Note: $stop    : C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1/clk_sr_behavioral_tb.v(16)
+#    Time: 100 ps  Iteration: 0  Instance: /clk_sr_behavioral_tb
+# Break in Module clk_sr_behavioral_tb at C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg3/q1/clk_sr_behavioral_tb.v line 16
+# End time: 12:39:34 on Oct 29,2021, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 0

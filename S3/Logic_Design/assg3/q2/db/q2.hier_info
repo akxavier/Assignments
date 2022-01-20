@@ -1,0 +1,18 @@
+|syn_dff
+q <= dff_behavioral:d1.q
+q_bar <= dff_behavioral:d1.q_bar
+clk => clk.IN1
+pre => Mux0.IN3
+clr => Mux0.IN4
+d => Mux0.IN5
+
+
+|syn_dff|dff_behavioral:d1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_bar~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q_bar~reg0.CLK
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+d => q_bar~reg0.DATAIN
+
+

@@ -1,0 +1,7 @@
+module or_gate
+(output a, b,
+input out);
+
+or g1 (out, a, b);
+
+endmodule 

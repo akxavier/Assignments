@@ -1,0 +1,79 @@
+# Reading pref.tcl
+# do q1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/assg2/q1 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q1/ha_gatelevel.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:25:22 on Oct 08,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q1" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q1/ha_gatelevel.v 
+# -- Compiling module ha_gatelevel
+# 
+# Top level modules:
+# 	ha_gatelevel
+# End time: 20:25:22 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/assg2/q1 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q1/fa_gatelevel.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:25:23 on Oct 08,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q1" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q1/fa_gatelevel.v 
+# -- Compiling module fa_gatelevel
+# 
+# Top level modules:
+# 	fa_gatelevel
+# End time: 20:25:23 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/assg2/q1 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q1/ripple_carry_gatelevel32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:25:23 on Oct 08,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q1" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q1/ripple_carry_gatelevel32.v 
+# -- Compiling module ripple_carry_gatelevel32
+# 
+# Top level modules:
+# 	ripple_carry_gatelevel32
+# End time: 20:25:23 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aadharsh\ K\ Xavier/Documents/Quartus\ Prime/assg2/q1 {C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q1/ripple_carry_gatelevel32_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:25:23 on Oct 08,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q1" C:/Users/Aadharsh K Xavier/Documents/Quartus Prime/assg2/q1/ripple_carry_gatelevel32_tb.v 
+# -- Compiling module ripple_carry_gatelevel32_tb
+# 
+# Top level modules:
+# 	ripple_carry_gatelevel32_tb
+# End time: 20:25:23 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  ripple_carry_gatelevel32_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" ripple_carry_gatelevel32_tb 
+# Start time: 20:25:23 on Oct 08,2021
+# Loading work.ripple_carry_gatelevel32_tb
+# Loading work.ripple_carry_gatelevel32
+# Loading work.fa_gatelevel
+# Loading work.ha_gatelevel
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0a = 00000000100000000000100000000000, b = 00000000000000100000000000000000, cout = 0, s = 00000000100000100000100000000000
+#                    5a = 00000000100000000000000000000000, b = 00000000000100000000000000000000, cout = 0, s = 00000000100100000000000000000000
+#                   10a = 00000000000000000000100000001000, b = 00000000000010000000000000000000, cout = 0, s = 00000000000010000000100000001000
+#                   15a = 00000010000000000000100000000000, b = 00000000000000000000000010000000, cout = 0, s = 00000010000000000000100010000000
+#                   20a = 00000000000000000100000000000000, b = 00010000000000000000000000000000, cout = 0, s = 00010000000000000100000000000000
+#                   25a = 00000000001000000000000000100000, b = 00000000000000000000001000000000, cout = 0, s = 00000000001000000000001000100000
+#                   30a = 00000000000011100000000000000000, b = 00000000000000100000000000000000, cout = 0, s = 00000000000100000000000000000000
+#                   35a = 00000000000000000000100000000000, b = 00100000000000000000000001000000, cout = 0, s = 00100000000000000000100001000000
+#                   40a = 00000001000000000000000000000000, b = 00000000001000000011100000000000, cout = 0, s = 00000001001000000011100000000000
+# End time: 20:26:11 on Oct 08,2021, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 0

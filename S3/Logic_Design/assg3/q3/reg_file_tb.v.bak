@@ -1,0 +1,32 @@
+module reg_file_tb;
+
+wire [7:0] sout;
+reg write;
+reg [1:0] reg_no;
+reg [7:0] sin;
+
+reg_file f1 (.sout(sout), .reg_no(reg_no), .write(write), .sin(sin));
+
+always
+begin
+	write = 0;
+	#10 write = 1;
+	#10;
+end
+
+initial
+begin
+	reg_no = 2'b00; .sin = 8'b01010011;
+	#20 reg_no = 2'b01; sin = 8'b00011101;
+	#20 reg_no = 2'b10; sin = 8'b00110110;
+	#20 reg_no = 2'b11; sin = 8'b11101001;
+	#20 reg_no = 2'b10;
+	#20 reg_no = 2'b11;
+	#20 reg_no = 2'b00; sin = 8'b11000101;
+	#20;
+end
+
+initial
+$monitor ($time, "write = %b, reg_no = %b, sin = %b, sout = %b", write, reg_no, sin, sout);
+
+endmodule

@@ -1,0 +1,16 @@
+module buffer3 (out, clk, en, d);
+
+output out;
+input clk, en, d;
+
+wire q;
+
+d_latch (.q(q), .clk(clk), .d(d));
+
+always @ (en)
+begin
+	if (en)
+		out <= q;
+end
+
+endmodule

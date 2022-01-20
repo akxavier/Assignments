@@ -1,0 +1,120 @@
+|lookahead_dataflow
+s[0] << fa_dataflow:fa1.s
+s[1] << fa_dataflow:fa2.s
+s[2] << fa_dataflow:fa3.s
+s[3] << fa_dataflow:fa4.s
+cout << fa_dataflow:fa4.cout
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+
+
+|lookahead_dataflow|fa_dataflow:fa1
+s <= ha_dataflow:ha2.s
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+a => a.IN1
+b => b.IN1
+c => c.IN1
+
+
+|lookahead_dataflow|fa_dataflow:fa1|ha_dataflow:ha1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+
+
+|lookahead_dataflow|fa_dataflow:fa1|ha_dataflow:ha2
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+
+
+|lookahead_dataflow|fa_dataflow:fa2
+s <= ha_dataflow:ha2.s
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+a => a.IN1
+b => b.IN1
+c => c.IN1
+
+
+|lookahead_dataflow|fa_dataflow:fa2|ha_dataflow:ha1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+
+
+|lookahead_dataflow|fa_dataflow:fa2|ha_dataflow:ha2
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+
+
+|lookahead_dataflow|fa_dataflow:fa3
+s <= ha_dataflow:ha2.s
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+a => a.IN1
+b => b.IN1
+c => c.IN1
+
+
+|lookahead_dataflow|fa_dataflow:fa3|ha_dataflow:ha1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+
+
+|lookahead_dataflow|fa_dataflow:fa3|ha_dataflow:ha2
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+
+
+|lookahead_dataflow|fa_dataflow:fa4
+s <= ha_dataflow:ha2.s
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+a => a.IN1
+b => b.IN1
+c => c.IN1
+
+
+|lookahead_dataflow|fa_dataflow:fa4|ha_dataflow:ha1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+
+
+|lookahead_dataflow|fa_dataflow:fa4|ha_dataflow:ha2
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+
+

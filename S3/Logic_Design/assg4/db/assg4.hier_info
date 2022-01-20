@@ -1,0 +1,43 @@
+|mult_signed
+out[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Add5.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= Add7.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= Add8.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= Add9.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= Add12.DB_MAX_OUTPUT_PORT_TYPE
+X[0] => Mult0.IN0
+X[0] => Mult2.IN0
+X[0] => Mult5.IN0
+X[0] => Mult8.IN0
+X[1] => Mult1.IN0
+X[1] => Mult4.IN0
+X[1] => Mult7.IN0
+X[1] => Mult10.IN0
+X[2] => Mult3.IN0
+X[2] => Mult6.IN0
+X[2] => Mult9.IN0
+X[2] => Mult11.IN0
+X[3] => Mult12.IN0
+X[3] => Mult13.IN0
+X[3] => Mult14.IN0
+X[3] => Mult15.IN0
+Y[0] => Mult0.IN1
+Y[0] => Mult1.IN1
+Y[0] => Mult3.IN1
+Y[0] => Mult12.IN1
+Y[1] => Mult2.IN1
+Y[1] => Mult4.IN1
+Y[1] => Mult6.IN1
+Y[1] => Mult13.IN1
+Y[2] => Mult5.IN1
+Y[2] => Mult7.IN1
+Y[2] => Mult9.IN1
+Y[2] => Mult14.IN1
+Y[3] => Mult8.IN1
+Y[3] => Mult10.IN1
+Y[3] => Mult11.IN1
+Y[3] => Mult15.IN1
+
+

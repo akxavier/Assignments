@@ -1,0 +1,12 @@
+|nand8_dataflow
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => out.IN1
+a[1] => out.IN1
+a[2] => out.IN1
+a[3] => out.IN1
+a[4] => out.IN1
+a[5] => out.IN1
+a[6] => out.IN0
+a[7] => out.IN1
+
+

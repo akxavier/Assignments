@@ -1,0 +1,12 @@
+|nor8_dataflow
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+a_port_expr0_index7 => out.IN0
+a_port_expr0_index6 => out.IN1
+a_port_expr0_index5 => out.IN1
+a_port_expr0_index4 => out.IN1
+a_port_expr0_index3 => out.IN1
+a_port_expr0_index2 => out.IN1
+a_port_expr0_index1 => out.IN1
+a_port_expr0_index0 => out.IN1
+
+
