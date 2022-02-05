@@ -10,6 +10,8 @@ section .bss
 d1 : resb 1
 d2 : resb 1
 junk : resb 1
+ans1 : resb 1
+ans2 : resb 2
 
 section .text
 
@@ -47,12 +49,27 @@ _start:
 
 	sub byte[d1], 30h
 	sub byte[d2], 30h
-	mov al, byte[d2]
-	add byte[d1], al
+	mov ax, word[d1]
+	add ax, word[d2]	;stored sum in ax register
+
+	mov bl, 10
+	mov ah, 0
+	div bl			;ah:al = remainder:quotient
+
+	mov byte[ans1], al
+	mov byte[ans2], ah
+	add byte[ans1], 30h
+	add byte[ans2], 30h
 
 	mov eax, 4
 	mov ebx, 1
-	mov ecx, d1
+	mov ecx, ans1
+	mov edx, 1
+	int 80h
+
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, ans2
 	mov edx, 1
 	int 80h
 
