@@ -11,4 +11,6 @@
 ## [Semester 4](S4)
 
 > [Hardware Laboratory](S4/HW_Lab)
+>
+> [Data Structures Laboratory](S4/DS_Lab)
 
