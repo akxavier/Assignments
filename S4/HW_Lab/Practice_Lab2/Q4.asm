@@ -51,8 +51,7 @@ _start:
     add ax, bx
     mov word[num1], ax
     
-    mov byte[count], 2
-    mov bx, word[count]
+    mov bx, 2
     mov ax, 0
     
     while:
@@ -63,51 +62,108 @@ _start:
         jmp while
  
 print:
-   mov word[sum], ax
-   call print_num
+    mov word[sum], ax
+    ;call print_num
    
-   mov eax, 1
-   mov ebx, 0
-   int 80h
+    mov dx, 0
+    mov ax, word[sum]
+    mov bx, 1000
+    div bx
+    mov word[sum], dx
+    mov word[temp], ax
+    add byte[temp], 30h
+    
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, temp
+    mov edx, 1
+    int 80h
+    
+    mov ax, word[sum]
+    mov ah, 0
+    mov bl, 100
+    div bl
+    mov byte[sum], ah
+    mov byte[temp], al
+    add byte[temp], 30h
+    
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, temp
+    mov edx, 1
+    int 80h
+    
+    mov ax, word[sum]
+    mov ah, 0
+    mov bl, 10
+    div bl
+    mov byte[sum], ah
+    mov byte[temp], al
+    add byte[temp], 30h
+    
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, temp
+    mov edx, 1
+    int 80h
+    
+    mov byte[temp], ah
+    add byte[temp], 30h
+    
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, temp
+    mov edx, 1
+    int 80h
+    
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, newline
+    mov edx, 1
+    int 80h
    
-print_num:
-    mov byte[count],0
-    pusha
-    extract_no:
-        cmp word[sum],0
-        je print_no
-        inc byte[count]
-        mov dx,0
-        mov ax,word[sum]
-        mov bx,10
-        div bx 
-        push dx 
-        mov word[sum],ax 
-        jmp extract_no
+    mov eax, 1
+    mov ebx, 0
+    int 80h
+   
+;print_num:
+    ;mov byte[count],0
+    ;pusha
+    ;extract_no:
+        ;cmp word[sum],0
+        ;je print_no
+        ;inc byte[count]
+        ;mov dx,0
+        ;mov ax,word[sum]
+        ;mov bx,10
+        ;div bx 
+        ;push dx 
+        ;mov word[sum],ax 
+        ;jmp extract_no
 
-    print_no:
-        cmp byte[count],0
-        je end_print
-        dec byte[count]
-        pop dx 
-        mov byte[temp],dl 
-        add byte[temp],30h
+    ;print_no:
+        ;cmp byte[count],0
+        ;je end_print
+        ;dec byte[count]
+        ;pop dx 
+        ;mov byte[temp],dl 
+        ;add byte[temp],30h
 
-        mov eax,4
-        mov ebx,1
-        mov ecx,temp
-        mov edx,1
-        int 80h
-        jmp print_no
+        ;mov eax,4
+        ;mov ebx,1
+        ;mov ecx,temp
+        ;mov edx,1
+        ;int 80h
+        ;jmp print_no
 
-    end_print:
-        mov eax,4
-        mov ebx,1
-        mov ecx,newline
-        mov edx,1
-        int 80h 
+    ;end_print:
+        ;mov eax,4
+        ;mov ebx,1
+        ;mov ecx,newline
+        ;mov edx,1
+        ;int 80h 
  
-    popa
-    ret
+    ;popa
+    ;ret
 
         
