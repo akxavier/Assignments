@@ -1,7 +1,5 @@
 ;check whether prime or not
 
-;find how many times a 2-digit number is divisible by 2
-
 section .data
 msg1 : db 'Enter a 2-digit number : '
 l1 : equ $-msg1
