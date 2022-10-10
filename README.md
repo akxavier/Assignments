@@ -14,3 +14,6 @@
 >
 > [Data Structures Laboratory](S4/DS_Lab)
 
+## [Semester 5](S5)
+
+> [Operating Systems](S5/Operating_Systems)
