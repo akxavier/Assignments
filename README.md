@@ -17,3 +17,7 @@
 ## [Semester 5](S5)
 
 > [Operating Systems](S5/Operating_Systems)
+
+## [Semester 6](S6)
+
+> [Networks Laboratory](S6/networks_lab)
