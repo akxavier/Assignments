@@ -1,0 +1,83 @@
+-----------------------------------CLIENT CODE----------------------------------
+
+CALC_CHECKSUM
+	calcualates and returns the checksum by taking bytewise XOR
+	
+SEND_A
+	initializes values in the packet and calls CALC_CHECKSUM
+	sends UDP packet to server every 100ms
+	
+SEND_B
+	initializes values in the packet and calls CALC_CHECKSUM
+	sends UDP packet to server every 150ms
+	
+MAIN
+	send a message "Hello" to start transactions with server
+	create two threads for SEND_A and SEND_B
+	
+-----------------------------------SERVER CODE----------------------------------
+
+Create a queue Q to store the incoming packets
+Initialize variable a_count & b_count to store the no. of packets of type 1 and type 2
+Initialize flag variables to denote type of packet at the front of queue
+
+IS_PACKET_VALID
+	calculates the checksum for a given packet and checks for errors
+	
+CHECK_ERRORS
+	while Q is non-empty
+		x = packet at the front of Q
+		
+		if(!IS_PACKET_VALID(X))
+			print ERROR
+			remove the packet with error from Q
+		else if error-free
+			if x.type == 1
+				flagA = 1 //shows type 1 packet is at the front of queue
+			else
+				flagB = 1 //shows type 2 packet is at the front of queue
+				
+HANDLE_A
+	while(1)
+		while(flagA != 1)
+			wait
+			
+		remove the type 1 packet from Q
+		a_count++
+		
+HANDLE_B
+	while(1)
+		while(flagB != 1)
+			wait
+			
+		remove the type 2 packet from Q
+		b_count++
+		
+PRINT_COUNT
+	while(1)
+		print a_count & b_count
+		sleep(0.3)
+		
+CREATE_NODE
+	create and return a node to store the packet in Q
+	
+MAIN
+	initialize Q
+	create a socket and bind it to port 3333
+	
+	start transaction when it receives message "Hello" from client
+	create a mutex to modify Q (mutex) and another to write to terminal (cnsole)
+	
+	create 4 threads
+		0->CHECK_ERRORS
+		1->HANDLE_A
+		2->HANDLE_B
+		3->PRINT_COUNT
+		
+	while(1)
+		recvfrom the packet from client
+		create a node
+		add the packet to the queue Q
+		
+	destroy mutexes
+	free(Q)

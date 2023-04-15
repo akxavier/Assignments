@@ -24,13 +24,11 @@ sem_t mutex;
 
 int calc_checksum(packet *pkt) {
 	int checksum = 0;
-	char *p = (char *) pkt;
-
-	for(int i = 0; i < sizeof (packet); i++) {
-		checksum ^= *p;
-		p++;
-	}
-
+    	char *p = (char *)pkt->payload;
+	for (int i = 0; i < sizeof(pkt->payload); i++) {
+        	checksum ^= *p;
+        	p++;
+    	}
 	return checksum;
 }
 
