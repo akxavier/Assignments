@@ -23,3 +23,7 @@
 > [Networks Laboratory](S6/networks_lab)
 >
 > [Networks Theory](S6/networks_theory)
+
+## [Semester 7](S7)
+
+> [Number Theory and Cryptography](S7/NTC)
