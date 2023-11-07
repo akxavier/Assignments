@@ -27,3 +27,5 @@
 ## [Semester 7](S7)
 
 > [Number Theory and Cryptography](S7/NTC)
+>
+> [Data Mining](S7/DM)
