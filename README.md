@@ -26,6 +26,8 @@
 
 ## [Semester 7](S7)
 
+> [Artificial Intelligence](S7/AI)
+>
 > [Number Theory and Cryptography](S7/NTC)
 >
 > [Data Mining](S7/DM)
