@@ -31,3 +31,7 @@
 > [Number Theory and Cryptography](S7/NTC)
 >
 > [Data Mining](S7/DM)
+
+## [Semester 8](S8)
+
+> [Topics in Data Analytics](S8/TDA)
